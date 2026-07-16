@@ -53,9 +53,14 @@ For each new role, append one row to the **Inbox** table in
 location, work mode, schedule, fit score (0–100), a short flag if anything needs
 checking, the **direct job-posting link** in the Link column, and status = "new".
 
+**Also print the new roles as a clickable markdown table directly in your reply**,
+so I can apply straight from chat. Columns: Tier · Title · Company (linked) ·
+Location · Mode · Schedule · Fit · **Apply** (direct posting link) · Flag. Sort
+best fit first.
+
 Only include roles with a real, working URL you actually found via search. When
-done, save the file and give me a 3-line summary: how many new roles added, the
-single best match, and any roles you flagged as "unknown" schedule.
+done, save the tracker file and add a 3-line summary under the table: how many
+new roles added, the single best match, and any roles flagged "unknown" schedule.
 
 ---
 

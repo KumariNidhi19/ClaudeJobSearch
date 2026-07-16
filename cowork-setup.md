@@ -52,8 +52,10 @@ postings or links to reach 20.
 Append new roles to the Inbox table, best fit first, each with: date found, tier,
 title, company as a markdown link to its careers page, location, work mode,
 schedule, fit score 0–100, a short flag, the direct job-posting link, and status
-"new". Save the file and give me a 3-line summary: roles added, best match, and
-any flagged "unknown" schedule.
+"new". ALSO print the new roles as a clickable markdown table directly in your
+reply (Tier · Title · Company linked · Location · Mode · Schedule · Fit · Apply
+link · Flag) so I can apply from chat. Save the tracker file and add a 3-line
+summary under the table: roles added, best match, and any flagged "unknown".
 ```
 
 That's it. Each morning you'll get ~20 fresh Inbox rows in

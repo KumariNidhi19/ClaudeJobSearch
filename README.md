@@ -19,7 +19,9 @@ Cowork scheduled task (runs daily, in the cloud, laptop can be closed)
         ▼
    applies your strict schedule rules + skips anything already in the tracker
         ▼
-   appends new matches to application-tracker.md  →  2-line summary to you
+   appends new matches to the tracker file  +  prints a clickable table in chat
+        ▼
+   you review the table (apply straight from the links) — repeats filtered out
 ```
 
 ## Files in this repo
@@ -64,13 +66,19 @@ Desktop app, up to date. Scheduled tasks are in Cowork under "Scheduled".
    git remote add origin https://github.com/<you>/<repo>.git
    git push -u origin main
    ```
-2. **Give Cowork the files.** Pick ONE:
-   - **GitHub connector (recommended for a repo):** connect GitHub in Cowork so
-     the cloud task can read these files and commit the updated tracker back to
-     the repo. In the task, refer to "my <repo> GitHub repo."
-   - **Cowork Project:** create a Project called *Job Search*, upload the six
-     `.md` files into it, and run the task inside that project. (Cloud scheduled
-     tasks read files from your Claude account/projects, not a local folder.)
+2. **Give Cowork the files, and choose where the tracker lives.**
+   - **Recommended:** create a Cowork **Project** called *Job Search* and upload
+     the six `.md` files into it. Cloud scheduled tasks read and write files in
+     your Claude account, so the task can update `application-tracker.md` in place
+     here. This is the reliable home for the living tracker.
+   - **GitHub (read-only):** you can connect GitHub to pull `profile.md`,
+     `resume.md`, and `job-preferences.md` into Claude as context. Note the
+     built-in GitHub integration is **read-only** — it syncs file contents in, but
+     Cowork **cannot commit the updated tracker back** through it. To mirror the
+     tracker into the repo you'd add GitHub's official MCP server as a custom
+     connector (paid, extra setup), or just download the updated tracker from the
+     Project and push it yourself. For most people, keeping the tracker in the
+     Project and reading the daily table in chat is simpler.
 3. **Set global instructions.** Settings → Cowork → Global instructions → Edit →
    paste section 1 of `cowork-setup.md`.
 4. **Create the daily task.** Open a new Cowork task, type `/schedule`, paste the
